@@ -1,0 +1,25 @@
+{
+  "name": "ComicVineClient",
+  "version": "0.1.0",
+  "description": "Comic Vine client for angularjs training",
+  "main": "index.js",
+  "keywords": [
+    "comic",
+    "angularjs"
+  ],
+  "authors": [
+    "Szymon Graczyk"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "angular-route": "~1.4.1"
+  }
+}
