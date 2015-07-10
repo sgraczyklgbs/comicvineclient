@@ -1,0 +1,24 @@
+<div class="row" data-ng-init="initialize()">
+  <form class="form-horizontal">
+    <div class="form-group">
+      <label class="col-xs-2 control-label" for="character-query">Character</label>
+      <div class="col-xs-10">
+        <input class="form-control" data-ng-change="handlers.searchCharacter()" data-ng-model="model.characterQuery" id="character-query" placeholder="Character name" type="text">
+      </div>
+    </div>
+  </form>
+</div>
+<div class="row">
+  <div class="col-xs-3 col-sm-2 col-md-1 character-block" data-ng-repeat="character in model.characters">
+    <div class="center-block">
+      <a href="#/character/{{ character.id }}">
+        <img class="center-block" data-error-src="{{ ui.defaultImage }}" data-ng-src="{{ ui.getCharacterImage(character.image.icon_url) }}">
+      </a>
+    </div>
+    <div class="text-center">
+      <span>
+        {{ character.name }}
+      </span>
+    </div>
+  </div>
+</div>
